@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Cleaners | Laundry & Dry Cleaning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="Aura icon.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-blue-600 tracking-wide">AURA</span>
+                <span class="text-xs uppercase font-semibold text-gray-500 tracking-widest mt-1">Cleaners</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+                <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="#book" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg transition font-medium shadow-sm">
+                    Book a Pickup
+                </a>
+            </div>
+
+
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2 rounded-md border border-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 text-sm font-medium">
+            <a href="#services" class="block text-gray-700 hover:text-blue-600 py-1">Services</a>
+            <a href="#pricing" class="block text-gray-700 hover:text-blue-600 py-1">Pricing</a>
+            <a href="#about" class="block text-gray-700 hover:text-blue-600 py-1">About Us</a>
+            <a href="#book" class="block bg-blue-600 text-white text-center py-2.5 rounded-lg font-semibold mt-2">
+                Book a Pickup
+            </a>
+        </div>
+    </nav>
+
+    <header class="bg-white py-12 md:py-20 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            
+            <div class="text-center md:text-left space-y-4">
+                <span class="inline-block bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                    Fast & Reliable Dry Cleaning
+                </span>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                    Clean, Crisp Clothes Delivered To Your Door.
+                </h1>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Say goodbye to laundry stress. We collect your dirty clothes, professionally wash, dry clean, press, and return them fresh within 48 hours.
+                </p>
+                <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <a href="#book" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-3.5 rounded-lg text-center shadow-md transition">
+                        Schedule a Pickup
+                    </a>
+                    <a href="https://wa.me/2348125937481" target="_blank" class="border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-semibold px-6 py-3.5 rounded-lg text-center transition">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=700&q=80" alt="Ironed Clothes" class="w-full h-72 sm:h-96 object-cover rounded-2xl shadow-lg border border-gray-100">
+            </div>
+
+        </div>
+    </header>
+
+    <section class="py-14 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">How It Works</h2>
+                <p class="text-gray-500 text-sm mt-1">Simple 3 steps to fresh clothes</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">
+                        1
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Book Pickup</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Fill out the quick form or call us to set a pickup time that suits you.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">
+                        2
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">We Clean & Press</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">We treat tough stains and iron your clothes with premium fabric care.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">
+                        3
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Clean Delivery</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">We return your clothes neatly folded or on hangers right to your house.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-14 bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Our Services</h2>
+                <p class="text-gray-500 text-sm mt-1">What we take care of for you</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">👔</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Dry Cleaning</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Perfect for suits, office shirts, silk dresses, and native attires like Agbada.</p>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">🧺</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Wash & Fold</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Everyday casuals, t-shirts, jeans, and kids wear washed fresh and folded.</p>
+                </div>
+                
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">✨</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Steam Ironing</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Professional wrinkle-free pressing on hangers ready for your closet.</p>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">🛏️</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Duvets & Beddings</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Deep thorough cleaning for heavy blankets, bedsheets, and curtain drapes.</p>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">👗</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Stain Removal</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Gentle chemical treatment for stubborn oil, wine, and collar marks.</p>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl hover:border-blue-500 transition">
+                    <span class="text-3xl mb-3 block">⚡</span>
+                    <h3 class="font-bold text-gray-900 text-base mb-1">Express Service</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Same-day and 24-hour turnaround when you need clothes urgently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-14 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Simple Price List</h2>
+                <p class="text-gray-500 text-sm mt-1">Affordable, transparent rates with zero hidden charges</p>
+            </div>
+
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                <table class="w-full text-left text-xs sm:text-sm">
+                    <thead class="bg-gray-100 text-gray-700 uppercase font-bold border-b border-gray-200">
+                        <tr>
+                            <th class="py-3 px-4 sm:px-6">Item</th>
+                            <th class="py-3 px-4 sm:px-6">Service</th>
+                            <th class="py-3 px-4 sm:px-6 text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 text-gray-600">
+                        <tr>
+                            <td class="py-3 px-4 sm:px-6 font-medium text-gray-900">Shirts / Tops</td>
+                            <td class="py-3 px-4 sm:px-6">Wash & Iron</td>
+                            <td class="py-3 px-4 sm:px-6 text-right font-semibold text-blue-600">₦1,000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 sm:px-6 font-medium text-gray-900">Trousers / Jeans</td>
+                            <td class="py-3 px-4 sm:px-6">Dry Clean & Press</td>
+                            <td class="py-3 px-4 sm:px-6 text-right font-semibold text-blue-600">₦1,200</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 sm:px-6 font-medium text-gray-900">Two-Piece Suit</td>
+                            <td class="py-3 px-4 sm:px-6">Executive Dry Clean</td>
+                            <td class="py-3 px-4 sm:px-6 text-right font-semibold text-blue-600">₦4,000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 sm:px-6 font-medium text-gray-900">Native Agbada (3-Piece)</td>
+                            <td class="py-3 px-4 sm:px-6">Delicate Care</td>
+                            <td class="py-3 px-4 sm:px-6 text-right font-semibold text-blue-600">₦4,500</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 sm:px-6 font-medium text-gray-900">Heavy Duvet / Quilt</td>
+                            <td class="py-3 px-4 sm:px-6">Deep Wash & Dry</td>
+                            <td class="py-3 px-4 sm:px-6 text-right font-semibold text-blue-600">₦5,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-14 bg-white">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <span class="text-blue-600 text-xs font-bold uppercase tracking-wider">Fast Service</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-1">Book a Doorstep Pickup</h2>
+                <p class="text-gray-500 text-xs sm:text-sm mt-1">Fill this quick form and our driver will contact you immediately.</p>
+            </div>
+
+            <form action="https://formsubmit.co/israelomotuyole247@gmail.com" method="POST" class="space-y-4 bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/confirmation.html">
+                <input type="hidden" name="_captcha" value="false">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Your Full Name</label>
+                    <input type="text" name="Customer Name" placeholder="e.g. John Adeleke" required class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Phone Number</label>
+                        <input type="tel" name="Phone Number" placeholder="e.g. 08125937481" required class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Pickup Date</label>
+                        <input type="date" name="Pickup Date" required class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Pickup Address</label>
+                    <input type="text" name="Address" placeholder="House number, street name and area" required class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Items Description (Optional)</label>
+                    <textarea name="Garment Details" rows="3" placeholder="e.g. 4 shirts, 2 suits, 1 duvet..." class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg text-sm uppercase tracking-wider transition shadow-sm">
+                    Confirm Pickup Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-blue-600 text-white text-xs py-3 px-4 text-center sm:text-left">
+            <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>📍 We pick up and deliver anywhere in Lagos</p>
+                <p>📞 Call or WhatsApp: <a href="tel:08125937481" class="underline font-bold">08125937481</a></p>
+            </div>
+        </div>
+
+        <div class="bg-gray-900 text-gray-400 py-10 text-xs">
+            <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                <div>
+                    <span class="text-xl font-bold text-white tracking-wide">AURA CLEANERS</span>
+                    <p class="mt-1">Quality laundry and dry cleaning delivered on time.</p>
+                </div>
+                <div>
+                    <p>&copy; 2026 Aura Cleaners. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed | Aura Cleaners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="Aura icon.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-2xl font-bold text-blue-600 tracking-wide">AURA</span>
+                <span class="text-xs uppercase font-semibold text-gray-500 tracking-widest mt-1">Cleaners</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <a href="index.html#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="index.html#pricing" class="hover:text-blue-600 transition">Pricing</a>
+                <a href="index.html#about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="index.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg transition font-medium shadow-sm">
+                    Back to Home
+                </a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2 rounded-md border border-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 text-sm font-medium">
+            <a href="index.html#services" class="block text-gray-700 hover:text-blue-600 py-1">Services</a>
+            <a href="index.html#pricing" class="block text-gray-700 hover:text-blue-600 py-1">Pricing</a>
+            <a href="index.html#about" class="block text-gray-700 hover:text-blue-600 py-1">About Us</a>
+            <a href="index.html" class="block bg-blue-600 text-white text-center py-2.5 rounded-lg font-semibold mt-2">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+    <main class="flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-sm p-6 sm:p-10 text-center">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-5 text-2xl font-bold">
+                ✓
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+                Booking Request Confirmed!
+            </h1>
+            <p class="text-sm text-gray-600 mb-6">
+                Your booking request has been confirmed and your booking ticket ID is:
+            </p>
+
+            <div class="inline-block bg-blue-50 border-2 border-dashed border-blue-400 text-blue-700 text-2xl font-extrabold px-8 py-3 rounded-xl mb-6">
+                #101
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 text-left mb-8">
+                <span class="font-bold">NB:</span> This ticket ID must be provided to the delivery pickup rider upon request to ensure smooth delivery.
+            </div>
+
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-5 text-left mb-6">
+                <h2 class="text-xs uppercase font-bold text-gray-500 tracking-wider mb-3">Bank Transfer Details</h2>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between border-b border-gray-200 pb-2">
+                        <span class="text-gray-500 font-medium">Bank Name:</span>
+                        <span class="font-bold text-gray-900">OPAY</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-200 pb-2">
+                        <span class="text-gray-500 font-medium">Account Number:</span>
+                        <span class="font-bold text-blue-600 tracking-wider">8139962901</span>
+                    </div>
+                    <div class="flex justify-between pt-1">
+                        <span class="text-gray-500 font-medium">Account Name:</span>
+                        <span class="font-bold text-gray-900">AURA CLEANERS</span>
+                    </div>
+                </div>
+            </div>
+
+            <form onsubmit="event.preventDefault(); alert('Receipt uploaded successfully! Our team will verify your payment shortly.');" class="text-left bg-gray-50 border border-gray-200 rounded-xl p-5 mb-8">
+                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">
+                    Upload Payment Receipt
+                </label>
+                <p class="text-xs text-gray-500 mb-3">
+                    Upload a screenshot or photo of your transfer confirmation.
+                </p>
+                <input type="file" accept="image/*,.pdf" required class="block w-full text-xs text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer border border-gray-300 rounded-lg p-1 bg-white mb-3">
+                <button type="submit" class="w-full bg-gray-900 hover:bg-black text-white font-semibold py-2.5 rounded-lg text-xs uppercase tracking-wider transition">
+                    Submit Receipt
+                </button>
+            </form>
+            <div class="border-t border-gray-100 pt-6">
+                <p class="text-base font-semibold text-gray-900">
+                    Thank you for your patronage!
+                </p>
+                <p class="text-xs text-gray-500 mt-1 mb-6">
+                    We appreciate your trust in Aura Cleaners. Your garments are in safe hands.
+                </p>
+                <a href="index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs uppercase tracking-wider px-6 py-3 rounded-lg transition">
+                    Return to Homepage
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER WITH INTEGRATED CONTACT / INFO BAR -->
+    <footer>
+        <div class="bg-blue-600 text-white text-xs py-3 px-4 text-center sm:text-left">
+            <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>📍 We pick up and deliver anywhere in Lagos</p>
+                <p>📞 Call or WhatsApp: <a href="tel:08125937481" class="underline font-bold">08125937481</a></p>
+            </div>
+        </div>
+
+        <div class="bg-gray-900 text-gray-400 py-10 text-xs">
+            <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                <div>
+                    <span class="text-xl font-bold text-white tracking-wide">AURA CLEANERS</span>
+                    <p class="mt-1">Quality laundry and dry cleaning delivered on time.</p>
+                </div>
+                <div>
+                    <p>&copy; 2026 Aura Cleaners. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
